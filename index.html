@@ -26,6 +26,14 @@
 @media(max-width:430px){.process-grid,.why-grid{grid-template-columns:1fr}.about-panel h2{font-size:32px}.project-cta{padding:25px}}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Portfolio image: use the full artwork without cropping */
+.work-grid.portfolio-grid{grid-template-columns:1fr;max-width:100%;width:100%;margin-inline:auto}
+.portfolio-project{width:100%;max-width:100%}
+.portfolio-visual{height:auto!important;min-height:0!important;padding:18px!important;background:var(--white)!important;display:flex!important;align-items:center;justify-content:center;overflow:hidden}
+.portfolio-visual img{display:block;width:100%;height:auto;min-height:0;max-height:680px;object-fit:contain;object-position:center}
+@media(max-width:800px){.portfolio-visual{padding:10px!important}.portfolio-visual img{max-height:560px}}
+
 </style>
 </head>
 <body>
@@ -52,8 +60,8 @@
 </section>
 <section class="wrap work" id="work">
   <div class="section-head"><div><div class="eyebrow" style="color:var(--gold)">A few ideas in action</div><h2>Selected Shopify concepts ✦</h2></div><p>Storefront design · Product discovery · Brand experience</p></div>
-  <div class="work-grid">
-    <article class="project"><div class="project-visual" style="padding:0;min-height:280px;overflow:hidden"><img src="/n.png" alt="Shopify portfolio project by Esther Olusoga" style="width:100%;height:100%;min-height:280px;object-fit:cover;display:block"></div><div class="project-info"><div><strong>Shopify Store Project</strong><small>Portfolio showcase</small></div><a class="round-arrow" href="/n.png" target="_blank" rel="noopener" aria-label="View portfolio image">↗</a></div></article>
+  <div class="work-grid portfolio-grid">
+    <article class="project portfolio-project"><div class="project-visual portfolio-visual"><img src="/n.png" alt="Shopify portfolio project by Esther Olusoga"></div><div class="project-info"><div><strong>Shopify Store Project</strong><small>Portfolio showcase</small></div><a class="round-arrow" href="/n.png" target="_blank" rel="noopener" aria-label="View portfolio image">↗</a></div></article>
   </div>
   <p class="work-caption">Concept projects for portfolio presentation — not client commissions or performance claims.</p>
 </section>
