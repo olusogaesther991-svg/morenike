@@ -53,6 +53,56 @@
 @media(max-width:800px){.portfolio-details{grid-template-columns:1fr 1fr;gap:18px;padding:22px}.portfolio-project-intro{grid-column:1/-1}.portfolio-view-link{justify-self:start}}
 @media(max-width:430px){.portfolio-details{grid-template-columns:1fr;padding:20px}.portfolio-project-intro{grid-column:auto}.portfolio-meta{grid-template-columns:1fr 1fr}.portfolio-view-link{margin-top:2px}}
 
+
+/* Second portfolio concept: fictional botanical skincare storefront */
+.concept-two{margin-top:30px;padding:28px;background:#f7e4d9;border-radius:22px;color:var(--green)}
+.concept-two-heading{max-width:650px;margin:0 auto 22px;text-align:center}
+.concept-two-heading h3{font:600 clamp(25px,3vw,34px) 'Playfair Display',serif;margin:0 0 8px}
+.concept-two-heading p{font-size:12px;color:var(--muted);margin:0}
+.concept-two-grid{display:grid;grid-template-columns:1.3fr 1fr .72fr;gap:14px;align-items:stretch}
+.concept-preview{background:#fffdf9;border-radius:15px;overflow:hidden;box-shadow:0 8px 24px rgba(7,63,61,.09);display:flex;flex-direction:column;min-width:0}
+.concept-browser{height:35px;background:#f4eee8;display:flex;align-items:center;gap:5px;padding:0 11px;font-size:7px;color:#46635b}
+.concept-browser i{width:6px;height:6px;border-radius:50%;background:#d5a18b}
+.concept-browser span{font-weight:700;letter-spacing:.14em;margin-left:8px}
+.concept-browser small{margin-left:auto;font-size:6px;letter-spacing:.08em}
+.botanica-hero{flex:1;min-height:245px;padding:20px 16px;background:#e6eddf;display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center}
+.botanica-overline{font-size:6px;letter-spacing:.12em;color:#58735d;font-weight:700}
+.botanica-hero strong{display:block;font:600 clamp(21px,2.6vw,34px)/1.02 'Playfair Display',serif;margin:11px 0}
+.botanica-hero p{font-size:8px;color:#55706b;max-width:150px}
+.botanica-hero b{font-size:6px;letter-spacing:.07em;border-bottom:1px solid #234b3b;padding-bottom:5px}
+.botanica-product-art{height:185px;position:relative;display:flex;align-items:center;justify-content:center;background:#d2dfcc;border-radius:48% 48% 10px 10px}
+.bottle{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:7px;letter-spacing:.08em;color:#f8f1df;background:linear-gradient(90deg,#bdc9a8,#e2dfc7 45%,#9cae8b);border:1px solid #f7f0dc;border-radius:8px 8px 5px 5px;box-shadow:5px 8px 12px #294a3222}
+.bottle small{font-size:5px;margin-top:5px}
+.bottle-one{width:48px;height:105px;z-index:1;transform:rotate(-7deg)}
+.bottle-two{width:43px;height:85px;background:linear-gradient(90deg,#b67e53,#e2b98b 45%,#9c704e);margin-left:-5px;transform:rotate(7deg)}
+.concept-caption{padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.concept-caption strong{font-size:10px}
+.concept-caption span{font-size:8px;color:var(--muted);line-height:1.45}
+.product-demo{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:17px 12px;align-items:center;background:#f4eee7}
+.product-demo-art{height:205px;background:#dfe8d8;display:grid;place-items:center;border-radius:9px}
+.demo-bottle{width:65px;height:135px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(90deg,#a7b58f,#e1dfc8 50%,#899d79);border-radius:9px 9px 5px 5px;color:#fff9e9;font:18px 'Playfair Display',serif;box-shadow:7px 9px 12px #294a3222}
+.demo-bottle small{font:5px 'DM Sans',sans-serif;letter-spacing:.08em}
+.product-demo-copy>small{font-size:5px;letter-spacing:.06em;color:#70816b}
+.product-demo-copy>strong{display:block;font:600 19px/1.05 'Playfair Display',serif;margin:9px 0}
+.demo-price{font-size:9px;font-weight:700}
+.product-demo-copy p{font-size:7px;color:#64736a;line-height:1.5;margin:9px 0}
+.demo-select{border:1px solid #bdc9b7;padding:7px;font-size:6px;margin:8px 0}
+.demo-add{background:#234b3b;color:white;text-align:center;padding:9px 4px;font-size:6px;letter-spacing:.08em;margin-bottom:9px}
+.mobile-demo{width:150px;min-height:255px;margin:13px auto 8px;border:5px solid #183e35;border-radius:22px;background:#f7f4e9;overflow:hidden;position:relative;flex:1}
+.mobile-notch{height:9px;width:48px;border-radius:0 0 8px 8px;background:#183e35;margin:0 auto}
+.mobile-top{font-size:6px;font-weight:700;letter-spacing:.1em;padding:10px 9px;display:flex;justify-content:space-between}
+.mobile-copy{padding:14px 10px 5px}
+.mobile-copy small{font-size:5px;letter-spacing:.07em;color:#73836d}
+.mobile-copy strong{display:block;font:600 21px/1 'Playfair Display',serif;margin:8px 0}
+.mobile-copy p{font-size:6px;color:#65766a;margin-bottom:8px}
+.mobile-copy b{font-size:5px;border-bottom:1px solid #234b3b;padding-bottom:3px}
+.mobile-art{height:88px;background:#dfe8d8;margin:10px 9px 4px;border-radius:40% 40% 7px 7px;display:flex;align-items:center;justify-content:center}
+.mobile-art .bottle-one{height:58px;width:27px;font-size:4px}
+.mobile-art .bottle-two{height:48px;width:24px;font-size:4px}
+.mobile-dots{text-align:center;font-size:5px;color:#71876b;padding-bottom:8px}
+@media(max-width:800px){.concept-two-grid{grid-template-columns:1fr 1fr}.concept-home{grid-column:1/-1}.botanica-hero{min-height:230px}.concept-mobile .mobile-demo{min-height:250px}}
+@media(max-width:500px){.concept-two{padding:18px 12px}.concept-two-grid{grid-template-columns:1fr}.concept-home{grid-column:auto}.botanica-hero{min-height:220px}.product-demo{min-height:240px}.concept-mobile .mobile-demo{width:170px}}
+
 </style>
 </head>
 <body>
@@ -95,7 +145,36 @@
       <a class="portfolio-view-link" href="/n.png" target="_blank" rel="noopener">View full image <span>↗</span></a>
     </div>
   </div>
-  <p class="work-caption">This is concept work created for portfolio presentation, not a commissioned client project. No client results or performance claims are implied.</p>
+  <div class="concept-two">
+    <div class="concept-two-heading"><span class="portfolio-kicker">SECOND PORTFOLIO PIECE · DEMO CONCEPT</span><h3>Botanical skincare storefront</h3><p>A sample Shopify experience for a fictional skincare brand, showing how a calm visual identity can carry through the homepage, product details and mobile shopping layout.</p></div>
+    <div class="concept-two-grid">
+      <div class="concept-preview concept-home">
+        <div class="concept-browser"><i></i><i></i><i></i><span>BOTANICA SKIN</span><small>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; JOURNAL</small></div>
+        <div class="botanica-hero">
+          <div><span class="botanica-overline">SIMPLE RITUALS · THOUGHTFUL SKINCARE</span><strong>Let your skin<br>feel at home.</strong><p>Gentle essentials, made for everyday moments.</p><b>DISCOVER THE COLLECTION&nbsp; ↗</b></div>
+          <div class="botanica-product-art"><span class="bottle bottle-one">BOTANICA<br><small>DAILY SERUM</small></span><span class="bottle bottle-two">BOTANICA<br><small>FACE OIL</small></span><i></i></div>
+        </div>
+        <div class="concept-caption"><strong>01 / Homepage</strong><span>Brand story · Collection discovery · Clear shopping path</span></div>
+      </div>
+      <div class="concept-preview concept-product">
+        <div class="product-demo">
+          <div class="product-demo-art"><span class="demo-bottle">B<br><small>BOTANICA<br>GLOW SERUM</small></span></div>
+          <div class="product-demo-copy"><small>BOTANICA SKIN / SERUMS</small><strong>Daily Glow<br>Serum</strong><span class="demo-price">$28.00</span><p>A lightweight daily serum for a simple, considered skincare routine.</p><div class="demo-select">SIZE&nbsp;&nbsp; 30 ML</div><div class="demo-add">ADD TO BAG&nbsp;&nbsp; +</div><small>INGREDIENTS · HOW TO USE · DETAILS</small></div>
+        </div>
+        <div class="concept-caption"><strong>02 / Product page</strong><span>Product information · Price clarity · Purchase action</span></div>
+      </div>
+      <div class="concept-preview concept-mobile">
+        <div class="mobile-demo">
+          <div class="mobile-notch"></div><div class="mobile-top">BOTANICA SKIN <span>☰</span></div>
+          <div class="mobile-copy"><small>DAILY SKINCARE, SIMPLIFIED</small><strong>Care that<br>feels like you.</strong><p>Meet your new everyday essentials.</p><b>SHOP NOW ↗</b></div>
+          <div class="mobile-art"><span class="bottle bottle-one">BOTANICA</span><span class="bottle bottle-two">BOTANICA</span></div>
+          <div class="mobile-dots">● &nbsp; ○ &nbsp; ○</div>
+        </div>
+        <div class="concept-caption"><strong>03 / Mobile layout</strong><span>Compact navigation · Readable content · Thumb-friendly action</span></div>
+      </div>
+    </div>
+    <p class="work-caption">Botanica Skin is a fictional brand created for this portfolio concept. The storefront visuals are illustrative design samples, not a live Shopify store or client commission.</p>
+  </div>
 </section>
 <section class="wrap services" id="services">
   <div class="services-art" aria-hidden="true"><div class="shop-bag">shopify</div><div class="sticker">Made with care ✦</div></div>
