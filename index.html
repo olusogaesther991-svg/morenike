@@ -54,6 +54,21 @@
 @media(max-width:430px){.portfolio-details{grid-template-columns:1fr;padding:20px}.portfolio-project-intro{grid-column:auto}.portfolio-meta{grid-template-columns:1fr 1fr}.portfolio-view-link{margin-top:2px}}
 
 
+
+/* Featured concept case-study details */
+.case-study{margin-top:18px;background:#fffdf9;color:var(--green);border:1px solid var(--line);border-radius:18px;padding:26px}
+.case-study-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}
+.case-study-head h4{font:600 25px/1.1 'Playfair Display',serif;margin:7px 0}
+.case-study-head p{font-size:12px;color:var(--muted);max-width:600px;margin:0}
+.case-study-tag{flex-shrink:0;background:#e5eee5;border-radius:999px;padding:8px 12px;font-size:9px;font-weight:700;letter-spacing:.08em}
+.case-study-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.case-study-item{border-top:1px solid var(--line);padding-top:14px}
+.case-study-item span{display:block;font-size:9px;letter-spacing:.13em;font-weight:700;color:#bd7256;margin-bottom:7px}
+.case-study-item h5{font-size:13px;margin:0 0 6px}
+.case-study-item p{font-size:11px;color:var(--muted);margin:0}
+.case-study-foot{margin-top:18px;padding:13px 15px;background:#f7e4d9;border-radius:12px;font-size:10px;color:#456560}
+@media(max-width:700px){.case-study{padding:20px}.case-study-head{flex-direction:column}.case-study-grid{grid-template-columns:1fr;gap:14px}}
+
 /* Second portfolio concept: fictional botanical skincare storefront */
 .concept-two{margin-top:30px;padding:28px;background:#f7e4d9;border-radius:22px;color:var(--green)}
 .concept-two-heading{max-width:650px;margin:0 auto 22px;text-align:center}
@@ -158,7 +173,7 @@
   <div>
     <div class="eyebrow">Shopify store design & optimization</div>
     <h1>Hello, I’m<br><span>Esther Olusoga.</span></h1>
-    <p class="hero-copy">I help brands turn their Shopify stores into clear, beautiful shopping experiences — designed to build trust, make products easier to discover, and support growth.</p>
+    <p class="hero-copy">I design thoughtful Shopify storefronts with clear navigation, organized product pages and a smoother shopping experience — helping brands present their products with confidence.</p>
     <div class="actions"><a class="btn btn-dark" href="#work">Explore my work <span>↗</span></a><a class="btn btn-light" href="#services">What I do <span>↗</span></a></div>
     <p class="micro-note">Thoughtful storefronts. Better customer journeys. Built around your brand.</p>
   </div>
@@ -187,6 +202,18 @@
       </div>
       <a class="portfolio-view-link" href="/n.png" target="_blank" rel="noopener">View full image <span>↗</span></a>
     </div>
+  </div>
+  <div class="case-study" aria-label="Featured project case study">
+    <div class="case-study-head">
+      <div><span class="portfolio-kicker">INSIDE THE CONCEPT · DESIGN BREAKDOWN</span><h4>Designed around a clearer shopping journey</h4><p>This concept explores how a storefront can introduce a brand, guide visitors towards its products and make essential information easier to find.</p></div>
+      <span class="case-study-tag">CONCEPT PROJECT</span>
+    </div>
+    <div class="case-study-grid">
+      <div class="case-study-item"><span>01 · THE BRIEF</span><h5>Create a welcoming first impression</h5><p>Shape a storefront direction that feels consistent, gives the brand a clear identity and helps a first-time visitor understand what the store offers.</p></div>
+      <div class="case-study-item"><span>02 · DESIGN APPROACH</span><h5>Make browsing feel straightforward</h5><p>Use a clear visual hierarchy, considered spacing, organized product presentation and simple navigation to help visitors move naturally through the page.</p></div>
+      <div class="case-study-item"><span>03 · KEY DETAILS</span><h5>Bring the essentials together</h5><p>Focus on a recognizable homepage, readable product information, visible shopping actions and a layout designed to adapt to smaller screens.</p></div>
+    </div>
+    <div class="case-study-foot"><strong>What this demonstrates:</strong> storefront planning, visual hierarchy, product presentation, navigation thinking and responsive design considerations. This is a portfolio design concept, not a live client build or a measured sales-result case study.</div>
   </div>
   <div class="concept-two">
     <div class="concept-two-heading"><span class="portfolio-kicker">SECOND PORTFOLIO PIECE · DEMO CONCEPT</span><h3>Botanical skincare storefront</h3><p>A sample Shopify experience for a fictional skincare brand, showing how a calm visual identity can carry through the homepage, product details and mobile shopping layout.</p></div>
