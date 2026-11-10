@@ -161,21 +161,126 @@
 @media(max-width:800px){.fashion-grid{grid-template-columns:1fr 1fr}.fashion-home-preview{grid-column:1/-1}.fashion-home{min-height:230px}}
 @media(max-width:500px){.concept-three{padding:18px 12px}.fashion-grid{grid-template-columns:1fr}.fashion-home-preview{grid-column:auto}.fashion-home{min-height:220px}.fashion-products{min-height:220px}.fashion-phone{width:170px}}
 
+
+/* Editorial refinement — preserve the established brand palette */
+:root{--green:#073f3d;--green2:#0e5b56;--cream:#fff5ef;--peach:#f3a184;--gold:#ffd17e}
+body{font-size:15px;letter-spacing:-.012em}
+.wrap{width:min(1180px,calc(100% - 64px))}
+.nav{padding:20px 0;border-bottom:1px solid var(--line);position:relative}
+.brand{font-size:14px;letter-spacing:-.025em}
+.brand-mark{border-radius:50%;width:34px;height:34px;font-family:'Playfair Display',serif}
+.navlinks{gap:25px;font-size:12px}
+.navlinks a:not(.nav-cta){position:relative}
+.navlinks a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--peach);transition:right .2s}
+.navlinks a:not(.nav-cta):hover:after{right:0}
+.nav-cta,.btn{border-radius:4px;padding:13px 18px;letter-spacing:.01em}
+.hero{padding:76px 0 92px;min-height:610px;gap:7%;grid-template-columns:1.08fr .92fr}
+.hero>div:first-child{max-width:620px}
+.eyebrow{font-size:10px;letter-spacing:.17em}
+h1{font-size:clamp(48px,6.1vw,82px);line-height:1.02;letter-spacing:-.06em;margin:22px 0 24px}
+h1 span{font-style:normal;color:var(--green2);text-decoration:underline;text-decoration-color:var(--peach);text-decoration-thickness:3px;text-underline-offset:8px}
+.hero-copy{font-size:16px;line-height:1.8;max-width:510px;color:#456560}
+.micro-note{font-size:10px;letter-spacing:.09em;text-transform:uppercase}
+.hero-art{min-height:490px;max-width:500px;width:100%;justify-self:end;background:#f0ded2;padding:18px}
+.hero-art:before{content:"ESTHER OLUSOGA  /  SHOPIFY DESIGN";position:absolute;top:0;left:18px;z-index:4;font-size:9px;letter-spacing:.16em;font-weight:700;color:var(--green)}
+.sun,.teal-blob,.spark,.availability,.note-card{display:none!important}
+.portrait{inset:34px 18px 18px;border-radius:2px;background:#e9c6b4}
+.portrait img{object-position:center 28%;object-fit:cover}
+.work{border-radius:2px;padding:48px;margin-bottom:92px}
+.work .section-head{margin-bottom:34px}
+.work .section-head h2{font-size:clamp(32px,4vw,48px);letter-spacing:-.035em}
+.work .section-head p{font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.portfolio-showcase{border-radius:2px;box-shadow:none}
+.portfolio-image-frame{padding:22px;background:#f2e7de}
+.portfolio-details{padding:30px 32px;grid-template-columns:1.3fr .8fr auto}
+.portfolio-project-intro h3{font-size:29px;letter-spacing:-.03em}
+.portfolio-project-intro p{font-size:13px;line-height:1.7}
+.portfolio-view-link{border-radius:3px}
+.case-study{border-radius:2px;box-shadow:none;padding:30px}
+.case-study-head h4{font-size:28px}
+.concept-two,.concept-three{margin-top:34px;padding:30px;background:#f4e6dc;border-radius:2px}
+.concept-two-heading h3,.concept-three-heading h3{font-size:32px;letter-spacing:-.035em}
+.concept-real-image{margin:0 auto 24px;max-width:100%;background:#fffdf9;padding:16px;border:1px solid var(--line)}
+.concept-real-image img{display:block;width:100%;height:auto;max-height:680px;object-fit:contain}
+.concept-real-image figcaption{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding-top:12px}
+.concept-two-grid,.fashion-grid{display:none!important}
+.work-caption{font-size:10px;letter-spacing:.025em}
+.services{gap:7%;margin-bottom:100px}
+.services-art{border-radius:2px;background:#e8e4d7;min-height:400px}
+.services-art:before{background:#c3d4c8}
+.shop-bag{border-radius:3px;transform:none;box-shadow:12px 12px 0 #0e5b5622}
+.services-art .sticker{border-radius:2px;transform:none}
+.services-content h2{font-size:clamp(34px,4vw,48px);letter-spacing:-.04em}
+.service-grid{gap:25px 24px}
+.service-icon{border-radius:2px;width:38px;height:38px}
+.extra-section{margin-bottom:100px}
+.about-panel{border-radius:2px;padding:48px;background:#f3e3d9;gap:48px}
+.about-panel h2{font-size:clamp(34px,4vw,47px);letter-spacing:-.04em}
+.about-panel p{line-height:1.8}
+.about-note{border-radius:2px;font-size:25px;padding:34px}
+.extra-heading h2{font-size:clamp(34px,4vw,48px);letter-spacing:-.04em}
+.process-card,.why-card,.skill-card,.faq-item{border-radius:2px;box-shadow:none}
+.process-card,.skill-card{padding:28px}
+.why-card{padding:28px}
+.faq-list{gap:0;border-top:1px solid var(--line)}
+.faq-item{border:0;border-bottom:1px solid var(--line);background:transparent;padding:22px 4px}
+.faq-item h3{font-size:15px}
+.faq-item p{font-size:13px;line-height:1.7}
+.project-cta{border-radius:2px;padding:48px}
+.proof{border-radius:2px 2px 0 0}
+.contact{padding:56px 0 28px}
+.contact h2{font-size:38px;letter-spacing:-.04em}
+.socials a{border-radius:2px}
+.copyright{font-size:9px;letter-spacing:.04em}
+a:focus-visible{outline:2px solid var(--peach);outline-offset:4px}
+@media(max-width:800px){
+ .wrap{width:min(100% - 36px,650px)}
+ .nav{align-items:flex-start;gap:18px;flex-direction:column}
+ .navlinks{width:100%;gap:17px;overflow-x:auto;padding:3px 0 8px;white-space:nowrap}
+ .navlinks a:not(.nav-cta){display:inline-block}
+ .nav-cta{margin-left:auto}
+ .hero{padding:48px 0 62px;grid-template-columns:1fr;gap:28px}
+ .hero-art{justify-self:center;max-width:520px;min-height:420px}
+ .work{padding:25px;margin-bottom:65px}
+ .portfolio-details{grid-template-columns:1fr 1fr;padding:24px}
+ .portfolio-project-intro{grid-column:1/-1}
+ .services{margin-bottom:65px}
+ .services-art{min-height:320px}
+ .extra-section{margin-bottom:65px}
+ .about-panel{padding:28px;gap:25px}
+ .project-cta{padding:30px}
+}
+@media(max-width:430px){
+ .wrap{width:calc(100% - 30px)}
+ .navlinks{gap:14px;font-size:11px}
+ .hero-art{min-height:340px;padding:12px}
+ .portrait{inset:30px 12px 12px}
+ .portfolio-details{grid-template-columns:1fr;padding:20px}
+ .portfolio-project-intro{grid-column:auto}
+ .portfolio-meta{grid-template-columns:1fr 1fr}
+ .portfolio-view-link{justify-self:start}
+ .case-study{padding:20px}
+ .concept-two,.concept-three{padding:20px}
+ .about-panel{padding:22px}
+ .about-panel h2{font-size:32px}
+ .proof{padding:30px 7%}
+}
+
 </style>
 </head>
 <body>
 <header class="wrap nav">
   <a class="brand" href="#home" aria-label="Esther Olusoga home"><span class="brand-mark">e.</span><span>Esther Olusoga<br><small style="font-size:10px;font-weight:500;color:var(--muted)">Shopify Specialist</small></span></a>
-  <nav class="navlinks" aria-label="Main navigation"><a href="#work">Portfolio</a><a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a class="nav-cta" href="#contact">Let’s talk ↗</a></nav>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#process">Process</a><a href="#faq">FAQ</a><a class="nav-cta" href="#contact">Start a project ↗</a></nav>
 </header>
 <main>
 <section class="wrap hero" id="home">
   <div>
-    <div class="eyebrow">Shopify store design & optimization</div>
-    <h1>Hello, I’m<br><span>Esther Olusoga.</span></h1>
-    <p class="hero-copy">I design thoughtful Shopify storefronts with clear navigation, organized product pages and a smoother shopping experience — helping brands present their products with confidence.</p>
+    <div class="eyebrow">Independent Shopify designer · Esther Olusoga</div>
+    <h1>Thoughtful Shopify stores.<br><span>Made to feel like you.</span></h1>
+    <p class="hero-copy">I help growing brands shape Shopify stores that feel considered, easy to navigate and ready for real customers — from the first impression to the product page.</p>
     <div class="actions"><a class="btn btn-dark" href="#work">Explore my work <span>↗</span></a><a class="btn btn-light" href="#services">What I do <span>↗</span></a></div>
-    <p class="micro-note">Thoughtful storefronts. Better customer journeys. Built around your brand.</p>
+    <p class="micro-note">Store design · Setup · Product pages · Optimization</p>
   </div>
   <div class="hero-art" aria-label="Decorative portfolio illustration">
     <div class="sun"></div><div class="teal-blob"></div>
@@ -217,6 +322,7 @@
   </div>
   <div class="concept-two">
     <div class="concept-two-heading"><span class="portfolio-kicker">SECOND PORTFOLIO PIECE · DEMO CONCEPT</span><h3>Botanical skincare storefront</h3><p>A sample Shopify experience for a fictional skincare brand, showing how a calm visual identity can carry through the homepage, product details and mobile shopping layout.</p></div>
+    <figure class="concept-real-image"><img src="/portfolio.png" alt="Botanical and ecommerce storefront design concept"><figcaption>Portfolio artwork · Botanical storefront direction</figcaption></figure>
     <div class="concept-two-grid">
       <div class="concept-preview concept-home">
         <div class="concept-browser"><i></i><i></i><i></i><span>BOTANICA SKIN</span><small>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; JOURNAL</small></div>
@@ -248,6 +354,7 @@
 
   <div class="concept-three">
     <div class="concept-three-heading"><span class="portfolio-kicker">THIRD PORTFOLIO PIECE · DEMO CONCEPT</span><h3>Modern fashion storefront</h3><p>A fictional contemporary clothing label, designed to demonstrate editorial product presentation, a focused collection layout and a mobile-friendly shopping experience.</p></div>
+    <figure class="concept-real-image fashion-real-image"><img src="/fashion.png" alt="Fashion Shopify storefront portfolio concept"><figcaption>Portfolio artwork · Fashion storefront direction</figcaption></figure>
     <div class="fashion-grid">
       <div class="fashion-preview fashion-home-preview">
         <div class="fashion-browser"><i></i><i></i><i></i><strong>FORME STUDIO</strong><small>NEW IN&nbsp;&nbsp; CLOTHING&nbsp;&nbsp; ABOUT</small></div>
@@ -347,7 +454,7 @@
     <div class="contact-inner">
       <div><div class="eyebrow" style="color:var(--gold)">Have a store in mind?</div><h2>Let’s build<br>something <em>great.</em> ✦</h2><p style="font-size:12px;color:#c5d9d3;max-width:300px;margin:12px 0 0">Tell me what you’re building or what you’d like to improve. I’d be happy to hear about your project.</p></div>
       <div><div class="contact-label">START A CONVERSATION</div><a class="contact-link" href="mailto:olusogaesther991@gmail.com">✉ olusogaesther991@gmail.com</a><a class="btn btn-light contact-button" href="mailto:olusogaesther991@gmail.com?subject=Shopify%20Store%20Project%20Enquiry&amp;body=Hi%20Esther%2C%0A%0AI%27d%20like%20to%20discuss%20a%20Shopify%20project.%0A%0AStore%20website%20(if%20available)%3A%0AWhat%20I%20sell%3A%0AWhat%20I%27d%20like%20help%20with%3A%0A%0AThank%20you.">Tell me about your project ↗</a><p class="contact-hint">A store link, what you sell and the help you need are a great place to start.</p></div>
-      <div><div class="contact-label">FOLLOW ALONG</div><div class="socials"><a href="https://www.facebook.com/profile.php?id=61593831128706" aria-label="Facebook" target="_blank" rel="noopener">f</a><a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a></div></div>
+      <div><div class="contact-label">FOLLOW ALONG</div><div class="socials"><a href="https://www.facebook.com/profile.php?id=61593831128706" aria-label="Facebook" target="_blank" rel="noopener">f</a></div><p class="contact-hint">More work and updates coming soon.</p></div>
     </div>
     <div class="copyright"><span>© <span id="year"></span> Esther Olusoga. All rights reserved.</span><span>Designed with intention · Built for the web</span></div>
   </div>
