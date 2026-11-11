@@ -335,6 +335,19 @@ a:focus-visible{outline:2px solid var(--peach);outline-offset:4px}
   .portfolio-meta{grid-template-columns:1fr}
 }
 
+
+/* Clear project notes for each portfolio concept */
+.portfolio-breakdown{display:grid;grid-template-columns:1.25fr repeat(3,1fr);gap:18px;margin-top:18px;padding:25px 26px;background:#fffdf9;color:var(--green);border:1px solid rgba(7,63,61,.13)}
+.portfolio-breakdown-intro h4{font:600 23px/1.12 'Playfair Display',serif;margin:5px 0 8px;letter-spacing:-.025em}
+.portfolio-breakdown-intro p,.portfolio-breakdown-item p{font-size:11px;line-height:1.65;color:var(--muted);margin:0}
+.portfolio-breakdown-item{border-left:1px solid var(--line);padding-left:16px}
+.portfolio-breakdown-item span{display:block;font-size:8px;letter-spacing:.13em;font-weight:700;color:#bd7256;margin-bottom:9px}
+.portfolio-breakdown-item strong{display:block;font-size:11px;line-height:1.4;margin-bottom:6px}
+.fashion-breakdown{background:#fbf8f2;border-color:#d9cec2}
+.fashion-breakdown .portfolio-kicker,.fashion-breakdown .portfolio-breakdown-item span{color:#8b6b56}
+@media(max-width:800px){.portfolio-breakdown{grid-template-columns:1fr 1fr;gap:18px}.portfolio-breakdown-intro{grid-column:1/-1}.portfolio-breakdown-item:nth-child(2){border-left:0;padding-left:0}}
+@media(max-width:500px){.portfolio-breakdown{grid-template-columns:1fr;padding:20px;gap:15px}.portfolio-breakdown-intro{grid-column:auto}.portfolio-breakdown-item{border-left:0;border-top:1px solid var(--line);padding:13px 0 0}.portfolio-breakdown-item:nth-child(2){border-top:1px solid var(--line)}}
+
 </style>
 </head>
 <body>
@@ -418,7 +431,13 @@ a:focus-visible{outline:2px solid var(--peach);outline-offset:4px}
         <div class="concept-caption"><strong>03 / Mobile layout</strong><span>Compact navigation · Readable content · Thumb-friendly action</span></div>
       </div>
     </div>
-    <p class="work-caption">Botanica Skin is a fictional brand created for this portfolio concept. The storefront visuals are illustrative design samples, not a live Shopify store or client commission.</p>
+    <div class="portfolio-breakdown" aria-label="Botanica concept details">
+      <div class="portfolio-breakdown-intro"><span class="portfolio-kicker">PROJECT NOTES</span><h4>From brand mood to shopping details</h4><p>The design direction uses a soft botanical palette and a calm visual hierarchy to make the product range feel easy to explore.</p></div>
+      <div class="portfolio-breakdown-item"><span>DESIGN FOCUS</span><strong>Brand consistency</strong><p>Carry the same visual language across the homepage and product presentation.</p></div>
+      <div class="portfolio-breakdown-item"><span>PAGE ELEMENTS</span><strong>Homepage · Product detail</strong><p>Introduce the brand, present product information and make the shopping action easy to spot.</p></div>
+      <div class="portfolio-breakdown-item"><span>SKILLS SHOWN</span><strong>Layout · Hierarchy · Responsive thinking</strong><p>Organize content for clear reading across larger and smaller screens.</p></div>
+    </div>
+    <p class="work-caption">Botanica Skin is a fictional brand created for this portfolio concept. The artwork is an illustrative design sample, not a live Shopify store or client commission.</p>
   </div>
 
   <div class="concept-three">
@@ -450,7 +469,13 @@ a:focus-visible{outline:2px solid var(--peach);outline-offset:4px}
         <div class="fashion-caption"><strong>03 / Mobile layout</strong><span>Compact navigation · Clear call to action · Responsive visual story</span></div>
       </div>
     </div>
-    <p class="work-caption" style="color:#75685e">Forme Studio is a fictional fashion label created for this portfolio concept. Product names, prices and storefront visuals are illustrative samples, not a live Shopify store or client commission.</p>
+    <div class="portfolio-breakdown fashion-breakdown" aria-label="Forme Studio concept details">
+      <div class="portfolio-breakdown-intro"><span class="portfolio-kicker">PROJECT NOTES</span><h4>A focused edit for a fashion brand</h4><p>The concept pairs editorial imagery with simple product browsing, keeping attention on the collection and the pieces themselves.</p></div>
+      <div class="portfolio-breakdown-item"><span>DESIGN FOCUS</span><strong>Editorial presentation</strong><p>Use image-led layouts and restrained styling to give the fictional label a recognizable identity.</p></div>
+      <div class="portfolio-breakdown-item"><span>PAGE ELEMENTS</span><strong>Homepage · Collection cards</strong><p>Show a clear collection entry point, consistent product cards, names and sample prices.</p></div>
+      <div class="portfolio-breakdown-item"><span>SKILLS SHOWN</span><strong>Product discovery · Visual hierarchy</strong><p>Keep the browsing structure understandable and consider how it adapts to mobile screens.</p></div>
+    </div>
+    <p class="work-caption" style="color:#75685e">Forme Studio is a fictional fashion label created for this portfolio concept. Product names, prices and artwork are illustrative samples, not a live Shopify store or client commission.</p>
   </div>
   
 </section>
