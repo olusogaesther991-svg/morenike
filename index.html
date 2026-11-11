@@ -348,6 +348,33 @@ a:focus-visible{outline:2px solid var(--peach);outline-offset:4px}
 @media(max-width:800px){.portfolio-breakdown{grid-template-columns:1fr 1fr;gap:18px}.portfolio-breakdown-intro{grid-column:1/-1}.portfolio-breakdown-item:nth-child(2){border-left:0;padding-left:0}}
 @media(max-width:500px){.portfolio-breakdown{grid-template-columns:1fr;padding:20px;gap:15px}.portfolio-breakdown-intro{grid-column:auto}.portfolio-breakdown-item{border-left:0;border-top:1px solid var(--line);padding:13px 0 0}.portfolio-breakdown-item:nth-child(2){border-top:1px solid var(--line)}}
 
+
+/* Editorial portfolio refinement */
+.work.editorial-work,.work#work{background:transparent;color:var(--ink);border-radius:0;padding:12px 0 0;overflow:visible;margin-bottom:78px}
+.portfolio-section-head{display:grid;grid-template-columns:1.1fr .9fr;align-items:end;text-align:left;gap:28px;margin:0 auto 30px;max-width:850px}
+.portfolio-section-head .eyebrow{color:var(--green2)}
+.portfolio-section-head .section-head h2,.portfolio-section-head h2{font-size:clamp(34px,4.5vw,48px);line-height:1.06;max-width:620px;margin:12px 0 0}
+.portfolio-section-head p{font-size:13px;line-height:1.7;color:var(--muted);max-width:320px;margin:0 0 4px}
+.editorial-project{display:grid;grid-template-columns:1.18fr .82fr;gap:clamp(24px,4vw,54px);align-items:center;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:clamp(14px,2vw,22px);margin:0 0 20px;box-shadow:0 8px 26px rgba(7,63,61,.045)}
+.editorial-project-reverse{grid-template-columns:.82fr 1.18fr}
+.editorial-project-reverse .editorial-project-image{order:2}
+.editorial-project-reverse .editorial-project-copy{order:1}
+.editorial-project-image{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;min-height:260px;background:#f7e9e1;border-radius:12px;overflow:hidden;padding:12px}
+.editorial-project-image img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center}
+.editorial-project-image>span{position:absolute;right:14px;bottom:14px;background:var(--green);color:white;padding:9px 13px;border-radius:999px;font-size:10px;font-weight:700;opacity:.96}
+.editorial-project-copy{padding:clamp(8px,1.5vw,20px);min-width:0}
+.editorial-project-topline{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:9px;letter-spacing:.12em;font-weight:700;color:#bd7256}
+.concept-label{letter-spacing:.04em;text-transform:uppercase;color:var(--green2);background:#e7eee7;padding:6px 9px;border-radius:999px;font-size:8px}
+.editorial-project-copy h3{font:600 clamp(25px,3vw,34px)/1.12 'Playfair Display',serif;color:var(--green);margin:20px 0 12px}
+.editorial-project-copy>p{font-size:13px;line-height:1.75;color:var(--muted);margin:0 0 20px}
+.project-focus{border-top:1px solid var(--line);padding-top:14px;display:grid;gap:6px}
+.project-focus span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#bd7256}
+.project-focus strong{font-size:12px;line-height:1.6;color:var(--green)}
+.editorial-project-copy>p.project-disclosure{font-size:10px;line-height:1.5;color:#71817b;margin:16px 0 0}
+.portfolio-note{max-width:760px;margin:22px auto 0;text-align:center;font-size:11px;line-height:1.7;color:var(--muted)}
+@media(max-width:800px){.work#work{margin-bottom:58px}.portfolio-section-head{grid-template-columns:1fr;gap:12px;max-width:640px}.portfolio-section-head p{max-width:520px}.editorial-project,.editorial-project-reverse{grid-template-columns:1fr;gap:12px}.editorial-project-reverse .editorial-project-image,.editorial-project-reverse .editorial-project-copy{order:initial}.editorial-project-image{min-height:0}.editorial-project-image img{max-height:520px}.editorial-project-copy{padding:12px 8px 10px}}
+@media(max-width:430px){.portfolio-section-head h2{font-size:33px}.editorial-project{padding:10px;border-radius:16px}.editorial-project-copy h3{margin:15px 0 9px}.editorial-project-image{padding:8px}.editorial-project-image>span{right:10px;bottom:10px}}
+
 </style>
 </head>
 <body>
@@ -373,111 +400,66 @@ a:focus-visible{outline:2px solid var(--peach);outline-offset:4px}
   </div>
 </section>
 <section class="wrap work" id="work">
-  <div class="section-head"><div><div class="eyebrow" style="color:var(--gold)">A few ideas in action</div><h2>Selected Shopify concepts ✦</h2></div><p>Storefront design · Product discovery · Brand experience</p></div>
-  <div class="portfolio-showcase">
-    <div class="portfolio-image-frame"><img src="/n.png" alt="Shopify storefront concept designed by Esther Olusoga"></div>
-    <div class="portfolio-details">
-      <div class="portfolio-project-intro">
-        <span class="portfolio-kicker">FEATURED PORTFOLIO PIECE · CONCEPT WORK</span>
-        <h3>Shopify Storefront Concept</h3>
-        <p>A visual showcase of my approach to presenting an online store. The focus is on creating a clear, considered storefront experience that helps visitors explore a brand and its products.</p>
-      </div>
-      <div class="portfolio-meta">
-        <div><span>PROJECT TYPE</span><strong>Shopify concept</strong></div>
-        <div><span>FOCUS</span><strong>Storefront presentation</strong></div>
-        <div><span>FORMAT</span><strong>Visual design showcase</strong></div>
-      </div>
-      <a class="portfolio-view-link" href="/n.png" target="_blank" rel="noopener">View full image <span>↗</span></a>
+  <div class="section-head portfolio-section-head">
+    <div>
+      <div class="eyebrow">Selected work</div>
+      <h2>Shopify concepts, considered from the first click.</h2>
     </div>
-  </div>
-  <div class="case-study" aria-label="Featured project case study">
-    <div class="case-study-head">
-      <div><span class="portfolio-kicker">INSIDE THE CONCEPT · DESIGN BREAKDOWN</span><h4>Designed around a clearer shopping journey</h4><p>This concept explores how a storefront can introduce a brand, guide visitors towards its products and make essential information easier to find.</p></div>
-      <span class="case-study-tag">CONCEPT PROJECT</span>
-    </div>
-    <div class="case-study-grid">
-      <div class="case-study-item"><span>01 · THE BRIEF</span><h5>Create a welcoming first impression</h5><p>Shape a storefront direction that feels consistent, gives the brand a clear identity and helps a first-time visitor understand what the store offers.</p></div>
-      <div class="case-study-item"><span>02 · DESIGN APPROACH</span><h5>Make browsing feel straightforward</h5><p>Use a clear visual hierarchy, considered spacing, organized product presentation and simple navigation to help visitors move naturally through the page.</p></div>
-      <div class="case-study-item"><span>03 · KEY DETAILS</span><h5>Bring the essentials together</h5><p>Focus on a recognizable homepage, readable product information, visible shopping actions and a layout designed to adapt to smaller screens.</p></div>
-    </div>
-    <div class="case-study-foot"><strong>What this demonstrates:</strong> storefront planning, visual hierarchy, product presentation, navigation thinking and responsive design considerations. This is a portfolio design concept, not a live client build or a measured sales-result case study.</div>
-  </div>
-  <div class="concept-two">
-    <div class="concept-two-heading"><span class="portfolio-kicker">SECOND PORTFOLIO PIECE · DEMO CONCEPT</span><h3>Botanical skincare storefront</h3><p>A sample Shopify experience for a fictional skincare brand, showing how a calm visual identity can carry through the homepage, product details and mobile shopping layout.</p></div>
-    <figure class="concept-real-image"><img src="/portfolio.png" alt="Botanical and ecommerce storefront design concept"><figcaption>Portfolio artwork · Botanical storefront direction</figcaption></figure>
-    <div class="concept-two-grid">
-      <div class="concept-preview concept-home">
-        <div class="concept-browser"><i></i><i></i><i></i><span>BOTANICA SKIN</span><small>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; JOURNAL</small></div>
-        <div class="botanica-hero">
-          <div><span class="botanica-overline">SIMPLE RITUALS · THOUGHTFUL SKINCARE</span><strong>Let your skin<br>feel at home.</strong><p>Gentle essentials, made for everyday moments.</p><b>DISCOVER THE COLLECTION&nbsp; ↗</b></div>
-          <div class="botanica-product-art"><span class="bottle bottle-one">BOTANICA<br><small>DAILY SERUM</small></span><span class="bottle bottle-two">BOTANICA<br><small>FACE OIL</small></span><i></i></div>
-        </div>
-        <div class="concept-caption"><strong>01 / Homepage</strong><span>Brand story · Collection discovery · Clear shopping path</span></div>
-      </div>
-      <div class="concept-preview concept-product">
-        <div class="product-demo">
-          <div class="product-demo-art"><span class="demo-bottle">B<br><small>BOTANICA<br>GLOW SERUM</small></span></div>
-          <div class="product-demo-copy"><small>BOTANICA SKIN / SERUMS</small><strong>Daily Glow<br>Serum</strong><span class="demo-price">$28.00</span><p>A lightweight daily serum for a simple, considered skincare routine.</p><div class="demo-select">SIZE&nbsp;&nbsp; 30 ML</div><div class="demo-add">ADD TO BAG&nbsp;&nbsp; +</div><small>INGREDIENTS · HOW TO USE · DETAILS</small></div>
-        </div>
-        <div class="concept-caption"><strong>02 / Product page</strong><span>Product information · Price clarity · Purchase action</span></div>
-      </div>
-      <div class="concept-preview concept-mobile">
-        <div class="mobile-demo">
-          <div class="mobile-notch"></div><div class="mobile-top">BOTANICA SKIN <span>☰</span></div>
-          <div class="mobile-copy"><small>DAILY SKINCARE, SIMPLIFIED</small><strong>Care that<br>feels like you.</strong><p>Meet your new everyday essentials.</p><b>SHOP NOW ↗</b></div>
-          <div class="mobile-art"><span class="bottle bottle-one">BOTANICA</span><span class="bottle bottle-two">BOTANICA</span></div>
-          <div class="mobile-dots">● &nbsp; ○ &nbsp; ○</div>
-        </div>
-        <div class="concept-caption"><strong>03 / Mobile layout</strong><span>Compact navigation · Readable content · Thumb-friendly action</span></div>
-      </div>
-    </div>
-    <div class="portfolio-breakdown" aria-label="Botanica concept details">
-      <div class="portfolio-breakdown-intro"><span class="portfolio-kicker">PROJECT NOTES</span><h4>From brand mood to shopping details</h4><p>The design direction uses a soft botanical palette and a calm visual hierarchy to make the product range feel easy to explore.</p></div>
-      <div class="portfolio-breakdown-item"><span>DESIGN FOCUS</span><strong>Brand consistency</strong><p>Carry the same visual language across the homepage and product presentation.</p></div>
-      <div class="portfolio-breakdown-item"><span>PAGE ELEMENTS</span><strong>Homepage · Product detail</strong><p>Introduce the brand, present product information and make the shopping action easy to spot.</p></div>
-      <div class="portfolio-breakdown-item"><span>SKILLS SHOWN</span><strong>Layout · Hierarchy · Responsive thinking</strong><p>Organize content for clear reading across larger and smaller screens.</p></div>
-    </div>
-    <p class="work-caption">Botanica Skin is a fictional brand created for this portfolio concept. The artwork is an illustrative design sample, not a live Shopify store or client commission.</p>
+    <p>Three independent design concepts exploring brand presentation, product discovery and clear shopping journeys.</p>
   </div>
 
-  <div class="concept-three">
-    <div class="concept-three-heading"><span class="portfolio-kicker">THIRD PORTFOLIO PIECE · DEMO CONCEPT</span><h3>Modern fashion storefront</h3><p>A fictional contemporary clothing label, designed to demonstrate editorial product presentation, a focused collection layout and a mobile-friendly shopping experience.</p></div>
-    <figure class="concept-real-image fashion-real-image"><img src="/fashion.png" alt="Fashion Shopify storefront portfolio concept"><figcaption>Portfolio artwork · Fashion storefront direction</figcaption></figure>
-    <div class="fashion-grid">
-      <div class="fashion-preview fashion-home-preview">
-        <div class="fashion-browser"><i></i><i></i><i></i><strong>FORME STUDIO</strong><small>NEW IN&nbsp;&nbsp; CLOTHING&nbsp;&nbsp; ABOUT</small></div>
-        <div class="fashion-home">
-          <div class="fashion-home-copy"><small>THE EVERYDAY EDIT · COLLECTION 01</small><strong>Wear what<br>moves you.</strong><p>Considered pieces for the rhythm of everyday life.</p><b>EXPLORE THE EDIT&nbsp; ↗</b></div>
-          <div class="fashion-model"></div>
-        </div>
-        <div class="fashion-caption"><strong>01 / Homepage</strong><span>Editorial brand feel · Clear collection entry · Strong visual hierarchy</span></div>
+  <article class="editorial-project">
+    <a class="editorial-project-image" href="/n.png" target="_blank" rel="noopener" aria-label="Open the full Shopify storefront concept image">
+      <img src="/n.png" alt="Shopify storefront design concept by Esther Olusoga">
+      <span>View image ↗</span>
+    </a>
+    <div class="editorial-project-copy">
+      <div class="editorial-project-topline"><span>01 / STOREFRONT DESIGN</span><span class="concept-label">Concept project</span></div>
+      <h3>Shopify storefront concept</h3>
+      <p>A visual exploration of a considered online storefront, with attention to how the brand is introduced and how visitors begin exploring its products.</p>
+      <div class="project-focus">
+        <span>Design focus</span>
+        <strong>Brand presentation · Page hierarchy · Product discovery</strong>
       </div>
-      <div class="fashion-preview">
-        <div class="fashion-browser"><i></i><i></i><i></i><strong>THE EDIT</strong></div>
-        <div class="fashion-products">
-          <div class="fashion-item"><div class="fashion-item-art dress"></div><small>NEW SEASON</small><strong>Column Dress</strong><span>$86.00</span></div>
-          <div class="fashion-item"><div class="fashion-item-art bag"></div><small>EVERYDAY</small><strong>Studio Tote</strong><span>$54.00</span></div>
-        </div>
-        <div class="fashion-caption"><strong>02 / Collection page</strong><span>Consistent product cards · Names and prices · Easy browsing</span></div>
-      </div>
-      <div class="fashion-preview fashion-mobile">
-        <div class="fashion-phone">
-          <div class="fashion-notch"></div><div class="fashion-mobile-top">FORME STUDIO <span>☰</span></div>
-          <div class="fashion-mobile-copy"><small>THE EVERYDAY EDIT</small><strong>Less, but<br>better.</strong><p>Pieces made to move with you.</p><b>SHOP THE EDIT ↗</b></div>
-          <div class="fashion-mobile-art"></div>
-        </div>
-        <div class="fashion-caption"><strong>03 / Mobile layout</strong><span>Compact navigation · Clear call to action · Responsive visual story</span></div>
-      </div>
+      <p class="project-disclosure">An independent portfolio concept, not a commissioned client project or a live store.</p>
     </div>
-    <div class="portfolio-breakdown fashion-breakdown" aria-label="Forme Studio concept details">
-      <div class="portfolio-breakdown-intro"><span class="portfolio-kicker">PROJECT NOTES</span><h4>A focused edit for a fashion brand</h4><p>The concept pairs editorial imagery with simple product browsing, keeping attention on the collection and the pieces themselves.</p></div>
-      <div class="portfolio-breakdown-item"><span>DESIGN FOCUS</span><strong>Editorial presentation</strong><p>Use image-led layouts and restrained styling to give the fictional label a recognizable identity.</p></div>
-      <div class="portfolio-breakdown-item"><span>PAGE ELEMENTS</span><strong>Homepage · Collection cards</strong><p>Show a clear collection entry point, consistent product cards, names and sample prices.</p></div>
-      <div class="portfolio-breakdown-item"><span>SKILLS SHOWN</span><strong>Product discovery · Visual hierarchy</strong><p>Keep the browsing structure understandable and consider how it adapts to mobile screens.</p></div>
+  </article>
+
+  <article class="editorial-project editorial-project-reverse">
+    <a class="editorial-project-image" href="/portfolio.png" target="_blank" rel="noopener" aria-label="Open the full botanical skincare storefront concept image">
+      <img src="/portfolio.png" alt="Botanical skincare Shopify storefront concept">
+      <span>View image ↗</span>
+    </a>
+    <div class="editorial-project-copy">
+      <div class="editorial-project-topline"><span>02 / BEAUTY & SKINCARE</span><span class="concept-label">Concept project</span></div>
+      <h3>Botanical skincare storefront</h3>
+      <p>A sample direction for a fictional skincare brand, using a calm visual identity to bring the brand story and product range together.</p>
+      <div class="project-focus">
+        <span>Design focus</span>
+        <strong>Visual consistency · Product presentation · Clear browsing</strong>
+      </div>
+      <p class="project-disclosure">Botanica Skin is a fictional brand created for this portfolio concept.</p>
     </div>
-    <p class="work-caption" style="color:#75685e">Forme Studio is a fictional fashion label created for this portfolio concept. Product names, prices and artwork are illustrative samples, not a live Shopify store or client commission.</p>
-  </div>
-  
+  </article>
+
+  <article class="editorial-project">
+    <a class="editorial-project-image" href="/fashion.png" target="_blank" rel="noopener" aria-label="Open the full fashion storefront concept image">
+      <img src="/fashion.png" alt="Contemporary fashion Shopify storefront concept">
+      <span>View image ↗</span>
+    </a>
+    <div class="editorial-project-copy">
+      <div class="editorial-project-topline"><span>03 / FASHION & APPAREL</span><span class="concept-label">Concept project</span></div>
+      <h3>Modern fashion storefront</h3>
+      <p>A fictional contemporary clothing label explored through an image-led storefront direction and a focused presentation of its collection.</p>
+      <div class="project-focus">
+        <span>Design focus</span>
+        <strong>Editorial presentation · Collection browsing · Visual hierarchy</strong>
+      </div>
+      <p class="project-disclosure">Forme Studio is a fictional label created for this portfolio concept.</p>
+    </div>
+  </article>
+
+  <p class="portfolio-note">These concepts demonstrate design direction and storefront thinking. They are illustrative portfolio work, not live Shopify builds or measured client results.</p>
 </section>
 <section class="wrap services" id="services">
   <div class="services-art" aria-label="Shopify store design approach"><div class="services-art-copy"><span>SHOPIFY / STORE DESIGN</span><strong>Good design makes the next step clear.</strong><small>Structure · Product pages · Customer journey</small></div></div>
